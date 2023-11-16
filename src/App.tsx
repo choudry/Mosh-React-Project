@@ -1,7 +1,14 @@
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  return <div> <ListGroup /></div>
+  const items = ["Now York", "Tokyo", "London", "Paris"];
+  const heading = "Cities";
+  return (
+    <div>
+      {" "}
+      <ListGroup items={items} heading={heading} />
+    </div>
+  );
 }
 
 export default App;
